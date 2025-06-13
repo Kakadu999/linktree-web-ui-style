@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main">
+        <ul class="center">
+            <div id="profile-pic"></div>
+            <div class="center">
+                <h2 id="name">PIZZA</h2>
+                <h5 id="description">PIZZARIA</h5>
+            </div>
+            <li><img src="insta.png" /><a href="https://www.google.com/">Instagram</a><span></span></li>
+            <li><img src="yt.png" /><a href="#">Youtube</a><span></span></li>
+            <li><img src="tik.png" /><a href="#">Tiktok</a><span></span></li>
+            <li><img src="fb.png" /><a href="#">Facebook</a><span></span></li>
+        </ul>
+    </div>
+
+    <div id="loader">
+        <h1>LOADING...</h1>
+    </div>
+</body>
+<script type="text/javascript">
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector("#loader").style.visibility = "visible";
+        } else {
+            document.querySelector("#loader").style.transitionDuration = "300ms";
+            document.querySelector("#loader").style.filter = "opacity(0%)";      
+        }
+    };
+</script>
+</html>

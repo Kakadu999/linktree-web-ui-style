@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right,rgb(131, 210, 255),rgb(9, 69, 107));
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+ul {
+    overflow: hidden;
+
+    gap: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul #name,#description {
+    color :wheat;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    background-color: rgb(60, 60, 169);
+    border-radius: 30px;
+
+    font-size: 20px;
+    width: 20em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 5px;
+
+    border: 1px solid rgb(80, 80, 186);
+
+    box-shadow: 5px 5px 10px rgba(86, 92, 210, 0.675);
+
+    transition-duration: 300ms;
+    
+}
+li:hover {
+    background-color: rgb(43, 43, 142);
+    width: 25em;
+    font-weight: bold;
+}
+li img {
+    width:20px;
+}
+
+#main {
+    padding: 20px;
+}
+
+#profile-pic {
+    
+    height: 150px;
+    width: 150px;
+    background-image: url("./pizza.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#loader {
+    position: absolute;
+    color: wheat;
+
+    background-image: linear-gradient(to bottom right,rgb(131, 210, 255),rgb(9, 69, 107));
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    pointer-events: none;
+}
+
+
+@media only screen and (max-width: 560px) {
+    li {
+        width: 10em;
+    }
+
+    li:hover{
+        width: 15em;
+    }
+}
